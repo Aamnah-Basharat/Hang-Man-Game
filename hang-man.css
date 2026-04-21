@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+}
+.start {
+  visibility: visible;
+  position: relative;
+}
+img {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 40px;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 700;
+  margin-top: 45%;
+  margin-left: 45%;
+  position: absolute;
+  z-index: 1;
+}
+.container {
+  visibility: hidden;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/background4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.parent {
+  display: flex;
+  z-index: 1;
+}
+.wrong {
+  margin-top: 2%;
+  display: flex;
+  font-size: 50px;
+  z-index: 1;
+}
+.wrong h1 {
+  background-color: orange;
+  border-radius: 10px;
+  color: transparent;
+  box-shadow: 0 2px 6px 0 white;
+  -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-color: rgb(145, 99, 38);
+  border: 1px solid rgb(197, 136, 21);
+  margin: 5px;
+  padding: 5px;
+}
+
+.radio {
+  display: grid;
+  grid-template-columns: repeat(5, 15px);
+  grid-template-rows: repeat(2, 15px);
+  background-color: rgba(255, 166, 0, 0.6);
+  height: fit-content;
+  padding: 5px;
+  border-radius: 15px;
+  margin: auto 40%;
+}
+.bxs-circle {
+  color: rgb(255, 166, 0);
+}
+.alhpabets {
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(13, 60px);
+  background: rgb(255, 229, 194);
+  padding: 20px;
+  border: 4px solid rgb(110, 169, 189);
+  width: fit-content;
+  border-radius: 20px;
+  z-index: 1;
+}
+.alhpabets input {
+  font-size: 40px;
+  font-weight: 900;
+  border-radius: 18px;
+  width: 59px;
+  height: 59px;
+  margin: 1px;
+  color: white;
+  -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-color: rgb(186, 150, 103);
+  background-color: #93c924;
+  border: solid darkgreen;
+  box-shadow: -1px 2px 2px white;
+}
+.alhpabets input:hover {
+  background-color: darkgreen;
+  border: solid #93c924;
+}
+.quiz {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quiz h1 {
+  color: white;
+  text-align: center;
+  width: 600px;
+  background: linear-gradient(180deg, #8ccbe0, #007ca5);
+  padding: 2px;
+  border: 4px solid rgb(229, 229, 0);
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+}
+.quiz .box {
+  justify-content: space-evenly;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(14, 55px);
+  grid-template-rows: repeat(4, 70px);
+  column-gap: 2px;
+  height: 350px;
+  width: 120vh;
+  background-color: orange;
+  overflow: hidden;
+  margin-top: 25px;
+  border-radius: 20px;
+  border: 5px solid rgb(229, 229, 0);
+  box-shadow: inset 5px 5px 5px rgb(165, 89, 42);
+}
+.quiz .box input {
+  margin-top: 70px;
+  width: 55px;
+  height: 55px;
+  align-self: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+  box-shadow: inset 1px 1px 5px rgb(165, 101, 42);
+}
+#end {
+  height: 100vh;
+  width: 100%;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, -100%);
+  background: linear-gradient(90deg, orange, rgb(210, 181, 78));
+}
+#end img {
+  width: 500px;
+  height: 500px;
+  transform: translate(140%, 40%);
+}
+#end h1 {
+  font-size: 60px;
+  font-weight: 900;
+  transform: translate(0, -300%);
+}
+#end h2 {
+  font-size: 30px;
+  font-weight: 700;
+  transform: translate(0, -600%);
+}
+#end h3 {
+  font-size: 30px;
+  font-weight: 700;
+  transform: translate(0, -300%);
+}
+.text {
+  display: flex;
+}
+.score {
+  margin-left: 500px;
+}
+.score h5 {
+  font-size: 18px;
+  transform: translate(0, -80px);
+}
+#usedPhrases {
+  font-weight: 700;
+  font-size: 18px;
+  transform: translate(0, -75px);
+}
+.phrases h4 {
+  font-size: 30px;
+  font-weight: 700;
+  transform: translate(0, -300%);
+}
